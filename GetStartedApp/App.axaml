@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:fluent="clr-namespace:Avalonia.Themes.Fluent;assembly=Avalonia.Themes.Fluent"
+             x:Class="GetStartedApp.App"
+             RequestedThemeVariant="Default">
+    <Application.DataTemplates>
+        <!-- Define any data templates here -->
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <fluent:FluentTheme/>
+    </Application.Styles>
+</Application>
+

@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:GetStartedApp.ViewModels"
+        x:Class="GetStartedApp.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Width="500" Height="350" Title="Hesap Makinesi">
+    <StackPanel Margin="20">
+        <TextBox Text="{Binding FirstNumber, Mode=TwoWay}" Width="200" Margin="0,0,0,10" Watermark="Enter first number"/>
+        <TextBox Text="{Binding SecondNumber, Mode=TwoWay}" Width="200" Margin="0,0,0,10" Watermark="Enter second number"/>
+        
+        <Button Content="Add" Width="200" Command="{Binding AddCommand}" Margin="0,0,0,5"/>
+        <Button Content="Subtract" Width="200" Command="{Binding SubtractCommand}" Margin="0,0,0,5"/>
+        <Button Content="Multiply" Width="200" Command="{Binding MultiplyCommand}" Margin="0,0,0,5"/>
+        <Button Content="Divide" Width="200" Command="{Binding DivideCommand}" Margin="0,0,0,5"/>
+        <Button Content="Clear" Width="200" Command="{Binding ClearCommand}" Margin="0,0,0,5"/>
+        
+        <TextBlock Text="{Binding Result}" Margin="0,20,0,0" FontSize="16"/>
+    </StackPanel>
+</Window>
+
